@@ -1,0 +1,69 @@
+//Escreva uma função chamada renderUpToTwenty. Quando a função for chamada, os números de 0 a 20 devem ser impressos no console.
+
+//Exemplo de
+//chamada da função: renderUpToTwenty()
+//saída: 0,1,2,3,4,5...20
+
+function renderUpToTwenty(){
+    for ( let i = 0; i <= 20; i++)
+    console.log (i)
+}
+renderUpToTwenty();
+
+//Escreva uma função chamada tenInTenToAHundred(). Quando a função for chamada, os números de 10 a 100, contando de 10 em 10, devem ser impressos no console.
+
+function tenInTenToAHundred(){
+    for (let j = 10; j <= 100; j +=10)
+    console.log(j)
+}
+tenInTenToAHundred();
+
+//Escreva uma função chamada oddUpToTwenty(). Quando a função for chamada, apresente no console os valores entre 0 e 20 que forem ímpares.
+
+function oddUpToTwenty(){
+    for(let j = 0; j <=20; j++)
+    if (j % 2 == 1){
+        console.log (j)
+    }
+}
+
+oddUpToTwenty()
+
+//Escreva uma função chamada evenUpToTwenty(). Quando a função for chamada, apresente no console os valores entre 0 e 20 que forem pares.
+
+function evenUpToTwenty(){
+    for (let j = 0 ; j <=20; j++ )
+    if(j % 2 == 0){
+        console.log(j)
+    }
+}
+
+evenUpToTwenty();
+
+//Escreva uma função chamada fromNegativeToPositive(). Quando a função for chamada, apresente os valores de -10 a 0.
+
+function fromNegativeToPositive(){
+    for( let j = -10; j <= 0; j++)
+    console.log(j)
+}
+
+fromNegativeToPositive();
+
+//Escreva uma função chamada inDescendingDirection. Quando a função for chamada, apresente valores de 10 a 0 no console.
+
+function inDescendingDirection(){
+    for(let j = 10 ; j >=0;j --)
+    console.log(j);
+}
+
+inDescendingDirection();
+
+//Escreva uma função chamada toSquare(). Quando a função for chamada, apresente o quadrado dos valores da sequência de 1 a 10.
+
+function toSquare(){
+    for ( j = 1; j <=10; j++){
+        console.log(j * j)
+    } 
+}
+
+toSquare();
