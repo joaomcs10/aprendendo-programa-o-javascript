@@ -1,0 +1,69 @@
+// ATIVIDADE 01:
+//-01 Escreva uma função que recebe um valor do tipo string 
+//-02 e com no mínimo 5 caracteres. 
+//-03 Insira o valor recebido em um array 
+//-04 e retorne o array gerado.
+
+// Primeira forma com o prompt ondo o usuario vai adicionando os nomes que ele quisar:
+
+function adcionarStringArray(){
+    let array = [];
+    let palavra = prompt("digite uma palavra com no minimo 5 caracter para criar uma lista ou digite 'sair' para finalizar o programa").toLowerCase()
+    while(palavra != 'sair'){
+        if(palavra.length >=5){
+            array.push(palavra);
+            palavra = prompt("digite uma palavra com no minimo 5 caracter/ ou digite 'sair' para finalizar o programa").toLowerCase() 
+        }else{
+            alert("Palavra Invalida")
+            palavra = prompt("digite uma palavra com no minimo 5 caracter/ ou digite 'sair' para finalizar o programa").toLowerCase()
+        }
+    }alert(`Sua Lista ficou : ${array}`)
+}
+
+adcionarStringArray();
+
+// Segunda forma mais simples:
+
+function adcionarStringArray2(palavra){
+    let array = [];
+
+    if(palavra.length >=5){
+        array.push(palavra);
+    }
+    return array;
+}
+console.log(adcionarStringArray2("carro"));
+
+// ATIVIDADE 02:
+
+//01- Escreva uma função que recebe um valor do tipo number. Use o valor recebido para acessar uma posição do seguinte array:
+//02-let arr = ["Hermanoteu", "Olonéia", "Migalatéia", "Godart"]⁠
+//03-Caso a posição exista, retorne o nome que se encontra nela. 
+//04-⁠Caso não seja acessado nenhuma posição com o valor recebido, ⁠alerte: "Valor não encontrado".
+
+function lendoUmaLista(){
+    let numeroDaLista = parseInt(prompt("Digite um numero para acessar um item da lista ou 11 para sair"));
+    let arr = ["Hermanoteu", "Olonéia", "Migalatéia", "Godart"];
+    while(numeroDaLista != 11 ){
+        if (numeroDaLista == 0){
+            alert(`O numero selecionado e: ${arr[0]}`);
+            numeroDaLista = parseInt(prompt("Digite um numero para acessar um item da lista ou 11 para sair"));
+        }else if(numeroDaLista == 1 ){
+            alert(`O numero selecionado e: ${arr[1]}`);
+            numeroDaLista = parseInt(prompt("Digite um numero para acessar um item da lista ou 11 para sair"));
+
+        }else if(numeroDaLista == 2 ){
+            alert(`O numero selecionado e: ${arr[2]}`);
+            numeroDaLista = parseInt(prompt("Digite um numero para acessar um item da lista ou 11 para sair"));
+        }else if(numeroDaLista == 3 ){
+            alert(`O numero selecionado e: ${arr[3]}`);
+            numeroDaLista = parseInt(prompt("Digite um numero para acessar um item da lista ou 11 para sair"));
+        }else{
+            alert("Valor não encontrado!!!!")
+            numeroDaLista = parseInt(prompt("Digite um numero para acessar um item da lista ou 11 para sair"));
+        }
+    } 
+    alert("Busca finalizada");
+
+}
+lendoUmaLista();
